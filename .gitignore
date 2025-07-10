@@ -16,3 +16,7 @@ dist/
 
 # Контрольные точки в Jupyter notebook лучше оставить в стороне
 .ipynb_checkpoints
+
+#База данных
+database/Table/
+database/all_for_test_database
