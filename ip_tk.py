@@ -2,12 +2,13 @@ from tkinter import *
 from tkinter import ttk
 import webbrowser
 
+from database.dbsql.sql_get_links import get_link
 
  
 def click_button():
-    links = webbrowser.open_new_tab("https://metanit.com/")
+    link = webbrowser.open_new_tab(get_link(name='METANIT'))
     # изменяем текст на кнопке
-    btn["text"] = f"Clicks {links}"   
+    btn["text"] = f"Clicks {link}"   
 
 
 root = Tk() # корневой объект окна
